@@ -1,0 +1,65 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+p1{ 
+    font-size:22px;
+    font-weight: bold;
+    text-decoration:none;
+    color: #aba5a5;
+    }
+    
+body{   
+        background-image:url("pics/dp1.jpg");
+        font-family:'barlow';
+    }
+
+.a{
+    text-decoration:none;
+}
+img{
+    border-radius:10px 10px 0px 0px;
+    width:206px;
+    height:170px;
+}
+
+.container1{
+    background:#2c2a2a;
+    width:210px;
+    height:210px;
+    border-radius:10px;
+}
+
+.container1:hover{
+    box-shadow: 0 0 10px 8px #615757 ;
+    
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+    background:#2C2828;
+    width:210px;
+    height:0px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* EXTRA */
+
+/* camera icon */
+
+.camera::after {
+    width:20px;
+    content: '📷';
+    --emoji: '📸';
+    animation-name: twoFrames;
+    animation-duration: 4s;
+}
+
+@keyframes twoFrames {
+    60% {
+        content: var(--emoji);
+    }
+}
+
