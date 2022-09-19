@@ -29,11 +29,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 	    	return "titanic";
 	    }
 		
-		@RequestMapping("login")
-	    public String login(){
-	    	return "login";
-	    }
-		
 		
 	}
 
