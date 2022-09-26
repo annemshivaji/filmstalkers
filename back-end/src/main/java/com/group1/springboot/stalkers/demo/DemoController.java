@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class DemoController {
-		@RequestMapping("hello")
+		@RequestMapping("bye")
 		@ResponseBody
 			
-		public int SayHello(){
+		public int SayHell(){
 		    int a=1;
 		    return ++a;
 		    }			

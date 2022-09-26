@@ -23,8 +23,7 @@
     <!-- newly added  -->   
         <center><p1 style="font-family:'Post No Bills Jaffna ExtraBold';font-size:20px;">
         <!-- <span class="emoji camera" role="img" aria-label="camera flash"></span> -->
-        Hi ${name}...Wanna be a movie critic? Lets get started -- <a href="login">login
-        </a>
+        Hi ${name}...as you are logged in now, you are a official filmstalker. Rate the movies.
         <!-- <span class="emoji camera" role="img" aria-label="camera flash"></span> -->
         </p1></center>
     <br>   
