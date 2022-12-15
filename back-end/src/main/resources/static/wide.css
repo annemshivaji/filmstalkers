@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 p1{ 
-    font-size:22px;
+    font-size:19px;
     font-weight: bold;
     text-decoration:none;
     color: #aba5a5;
@@ -22,7 +22,7 @@ body{
 img{
     border-radius:10px 10px 0px 0px;
     width:172px;
-    height:135px;
+    height:140px;
 }
 
 .container1{

@@ -7,7 +7,7 @@
     <title>titanic</title>
     <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
     <link rel="stylesheet" media="screen and (min-width: 641px)" href="films/wide2.css">
-    <link rel="stylesheet" media="screen and (max-width: 640px)" href="small2.css">
+    <link rel="stylesheet" media="screen and (max-width: 640px)" href="films/small2.css">
 </head>
 <body>
     <br><br>
@@ -23,8 +23,8 @@
             <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>          
             <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
             <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>        
-          </div></div></center></div><br> 
-
-    
+          </div></div><br>
+        <center><p1>Your Rating - 4/5</p1></center>
+        </center></div><br> 
 </body>
 </html>
