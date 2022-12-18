@@ -1,19 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>filmStalkers</title>
-    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
 
-    <link rel="stylesheet" media="screen and (min-width: 641px)" href="/wide.css">
-    <link rel="stylesheet" media="screen and (max-width: 640px)" href="/small.css">
+<%@ include file="common/header.jspf" %>
 
-</head>
-<body style="background-color:#211e1e">
-    <br>
+       <div class="container">
+       <%@ include file="common/navigation.jspf" %>
+<br>
     
         <center><p1 style="font-family:'Post No Bills Jaffna ExtraBold';font-size:45px;">
         <!-- <span class="emoji camera" role="img" aria-label="camera flash"></span> -->
@@ -58,20 +48,7 @@
                     <p1>fight club</p1></div>
         <div class="container1"><img src="pics/basket.jpg"></img>
                     <p1>Basketball..</p1></div>
-       <!-- <div class="container1"><img src="pics/titanic.jpg"></img></div>
-       <div class="container1"><img src="pics/god father 2.jpg"></img></div>
-       <div class="container1" "><img src="pics/fight club.jpg"></img></div>
-       <div class="container1"><img src="pics/basket.jpg"></img></div>
-       <div class="container1"><img src="pics/taxi.jpg"></img></div>
-       <div class="container1"><img src="pics/requiem.jpg"></img></div>
-       <div class="container1"><img src="pics/joker1.jpg"></img></div>
-       <div class="container1"><img src="pics/ok.jpg"></img></div>
-       <div class="container1"><img src="pics/titanic.jpg"></img></div>
-       <div class="container1"><img src="pics/god father 2.jpg"></img></div>
-       <div class="container1" "><img src="pics/fight club.jpg"></img></div>
-       <div class="container1"><img src="pics/basket.jpg"></img></div> -->
-       <br>
-    </div></center>
     
-</body>
-</html>
+    </div></center>
+    </div>
+    <%@ include file="common/footer.jspf" %>

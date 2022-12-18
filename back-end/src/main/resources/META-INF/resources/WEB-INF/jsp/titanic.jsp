@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>titanic</title>
-    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
-    <link rel="stylesheet" media="screen and (min-width: 641px)" href="films/wide2.css">
-    <link rel="stylesheet" media="screen and (max-width: 640px)" href="films/small2.css">
-</head>
-<body>
-    <br><br>
+<%@ include file="common/header2.jspf" %>
+
+    <%@ include file="common/navigation.jspf" %>
+       <br>
+    <br>
         <center><iframe src="https://www.youtube.com/embed/qtRKdVHc-cE"></iframe><br><br></center>  
         <center><div class="container2"><br>
         
@@ -23,5 +15,4 @@
         <center><button><a href="rate" style="text-decoration:none">Rate</a></button></center>
         <br>
         </div> 
-</body>
-</html>
+<%@ include file="common/footer.jspf" %>
