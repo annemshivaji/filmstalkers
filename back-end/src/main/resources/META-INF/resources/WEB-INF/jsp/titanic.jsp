@@ -11,7 +11,7 @@
          forms a "fight club" with soap salesman Tyler Durden,
           and becomes embroiled in a relationship with Marla Singer.</p1><br><br>
         <br>
-        <center><p1>Your Rating - ${rating}/5</p1></center></center><br>
+        <center><p1>Your Rating - ${rating1}/5</p1></center></center><br>
         <center><button><a href="rate" style="text-decoration:none">Rate</a></button></center>
         <br>
         </div> 

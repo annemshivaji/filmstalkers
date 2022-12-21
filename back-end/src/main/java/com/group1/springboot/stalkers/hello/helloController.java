@@ -33,10 +33,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 		}
 		
 		@RequestMapping(value="rate",method=RequestMethod.POST)
-	
-		//login?name=Ranga RequestParam
 		public String postrate(@RequestParam String rating,ModelMap model) {
-
 				model.put("rating",rating);
 				return "titanic";
 		
