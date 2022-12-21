@@ -10,14 +10,16 @@ public class Film {
 
 	private int id;
 	private String username;
+	private String filmname;
 //	private String description;
 //	private LocalDate targetDate;
 	private double rating;
 	
-	public Film(int id,String username,double rating) {
+	public Film(int id,String username,String filmname,double rating) {
 		super();
 		this.id = id;
 		this.username = username;
+		this.filmname= filmname;
 //		this.description = description;
 //		this.targetDate = targetDate;
 		this.rating = rating;
@@ -38,6 +40,14 @@ public class Film {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	
+	public String getFilmname() {
+		return filmname;
+	}
+
+	public void setFilmname(String filmname) {
+		this.filmname = filmname;
 	}
 
 //	public String getDescription() {
@@ -64,11 +74,9 @@ public class Film {
 		this.rating = rating;
 	}
 
-
-
 	@Override
 	public String toString() {
-		return username +"-"+rating;
+		return filmname +"-"+rating;
 	} 
 
 }

@@ -38,9 +38,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 		public String postrate(@RequestParam String rating,ModelMap model) {
 
 				model.put("rating",rating);
-				//Authentication 
-				//name - shivaji
-				//password - 8		
 				return "titanic";
 		
 

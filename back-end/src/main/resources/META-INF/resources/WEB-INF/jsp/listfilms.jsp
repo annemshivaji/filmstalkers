@@ -22,7 +22,7 @@
     <center><div class="container2">
           <c:forEach items="${films}" var="film">
                  <div class="container1"><a href="titanic" style="text-decoration:none;"><img src="pics/titanic.jpg"></img><br>
-                 <p1>${film.username}-${film.rating}</p1></a></div>
+                 <p1>${film.filmname}-${film.rating}</p1></a></div>
                 
 		 </c:forEach>
 
