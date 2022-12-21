@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 
 
-@Controller
+//@Controller
 @SessionAttributes("name")
 public class FilmController {
 	public FilmController(FilmService filmService) {

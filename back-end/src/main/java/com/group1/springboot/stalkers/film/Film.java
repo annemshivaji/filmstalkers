@@ -1,13 +1,21 @@
 package com.group1.springboot.stalkers.film;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.Size;
 
-
+@Entity
 public class Film {
 //Database (MySQL) 
 //Static List of films => Database (H2, MySQL)
 
+	public Film() {
+		
+	}
 	
-
+    @Id
+    @GeneratedValue
 	private int id;
 	private String username;
 	private String filmname;
