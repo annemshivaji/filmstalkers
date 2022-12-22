@@ -27,7 +27,7 @@ import com.group1.springboot.stalkers.film.Film;
 //		@ResponseBody (no response body for view)
 		
 	    public String titanic(){
-	    	return "titanic";
+	    	return "films/titanic";
 	    }
 		
 //		//GET,POST

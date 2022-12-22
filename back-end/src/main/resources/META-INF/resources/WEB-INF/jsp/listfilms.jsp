@@ -20,12 +20,8 @@
     <br>   
     <!-- newly added  -->
     <center><div class="container2">
-          <c:forEach items="${films}" var="film">
-                 <div class="container1"><a href="titanic" style="text-decoration:none;"><img src="pics/titanic.jpg"></img><br>
-                 <p1>${film.filmname}-${film.rating}</p1></a></div>
-                
-		 </c:forEach>
-
+       <div class="container1"><a href="titanic" style="text-decoration:none;"><img src="pics/titanic.jpg"></img></a>
+                 <p1>Titanic</p1></div>
        <div class="container1"><img src="pics/god father 2.jpg"></img>
                  <p1>The Godfather II</p1></div>
        <div class="container1" "><img src="pics/fight club.jpg"></img>

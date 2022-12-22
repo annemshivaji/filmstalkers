@@ -64,7 +64,9 @@ public class FilmControllerJpa {
 		filmRepository.save(film);
 //		todoService.addTodo(username, todo.getDescription(), 
 //				todo.getTargetDate(), todo.isDone());
-		return "redirect:titanic";
+		List<Film> films = filmRepository.findByUsername(username);
+		model.addAttribute("films", films);	
+		return "films/titanic";
 	}
 
 

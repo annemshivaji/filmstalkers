@@ -1,4 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="common/header2.jspf" %>
+
 
     <%@ include file="common/navigation.jspf" %>
        <br>
@@ -11,7 +13,14 @@
          forms a "fight club" with soap salesman Tyler Durden,
           and becomes embroiled in a relationship with Marla Singer.</p1><br><br>
         <br>
-        <center><p1>Your Rating - ${film.rating}/5</p1></center></center><br>
+
+        
+        <c:forEach items="${films}" var="film">
+          <c:if test = "${(film.filmname ==  'Titanic')}">
+        <center><p1>Your Rating - <c:out value = "${film.rating}"/>/5</p1>
+        </c:if>                
+		</c:forEach>
+		</center></center><br>
         <center><button><a href="rate" style="text-decoration:none">Rate</a></button></center>
         <br>
         </div> 

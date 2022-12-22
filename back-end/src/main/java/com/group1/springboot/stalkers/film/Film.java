@@ -1,5 +1,7 @@
 package com.group1.springboot.stalkers.film;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -14,10 +16,10 @@ public class Film {
 		
 	}
 	
-    @Id
-    @GeneratedValue
+
 	private int id;
 	private String username;
+	@Id
 	private String filmname;
 //	private String description;
 //	private LocalDate targetDate;
@@ -71,8 +73,8 @@ public class Film {
 //	}
 //
 //	public void setTargetDate(LocalDate targetDate) {
-//		this.targetDate = targetDate;
-//	}
+//	this.targetDate = targetDate;
+//}
 	
 	public double getrating() {
 		return rating;
