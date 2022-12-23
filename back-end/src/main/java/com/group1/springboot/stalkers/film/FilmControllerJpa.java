@@ -69,27 +69,15 @@ public class FilmControllerJpa {
 		return "films/titanic";
 	}
 	
-	@RequestMapping(value="rate", method = RequestMethod.GET)
-	public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
-		Film film = FilmRepository.findById(id).get();
-		model.addAttribute("film", film);
-		return "rate";
-	}
-
-	@RequestMapping(value="rate", method = RequestMethod.POST)
-	public String updateTodo(ModelMap model, @Valid Film film, BindingResult result) {
-		
-		if(result.hasErrors()) {
-			return "film";
-		}
-		
+	@RequestMapping("titanic")
+	
+    public String titanic(ModelMap model){
 		String username = getLoggedInUsername(model);
-		film.setUsername(username);
-		filmRepository.save(film);
-		return "films/titanic";
-	}
-
-
+		List<Film> films = filmRepository.findByUsername(username);
+		model.addAttribute("films", films);
+    	return "films/titanic";
+    }
+	
 	private String getLoggedInUsername(ModelMap model) {
 		Authentication authentication = 
 				SecurityContextHolder.getContext().getAuthentication();

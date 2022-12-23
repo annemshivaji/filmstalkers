@@ -23,12 +23,7 @@ import com.group1.springboot.stalkers.film.Film;
 	    	return "index";
 	    }
 		
-		@RequestMapping("titanic")
-//		@ResponseBody (no response body for view)
-		
-	    public String titanic(){
-	    	return "films/titanic";
-	    }
+
 		
 //		//GET,POST
 //		@RequestMapping(value="rate",method=RequestMethod.GET)
