@@ -8,6 +8,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import jakarta.validation.Valid;
@@ -25,8 +26,7 @@ public class FilmControllerJpa {
 		this.filmRepository = filmRepository;
 	}
 
-	private FilmService filmService;
-	
+	private FilmService filmService;	
 	private FilmRepository filmRepository;
 	
 	@RequestMapping("list-films")
@@ -53,7 +53,7 @@ public class FilmControllerJpa {
 	//}
 	
 	@RequestMapping(value="rate",method=RequestMethod.POST)
-	public String postrate(ModelMap model,Film film, BindingResult result) {
+	public String postrate(ModelMap model,@Valid Film film, BindingResult result) {
 		
 		if(result.hasErrors()) {
 			return "film";
@@ -66,6 +66,26 @@ public class FilmControllerJpa {
 //				todo.getTargetDate(), todo.isDone());
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);	
+		return "films/titanic";
+	}
+	
+	@RequestMapping(value="rate", method = RequestMethod.GET)
+	public String showUpdateTodoPage(@RequestParam int id, ModelMap model) {
+		Film film = FilmRepository.findById(id).get();
+		model.addAttribute("film", film);
+		return "rate";
+	}
+
+	@RequestMapping(value="rate", method = RequestMethod.POST)
+	public String updateTodo(ModelMap model, @Valid Film film, BindingResult result) {
+		
+		if(result.hasErrors()) {
+			return "film";
+		}
+		
+		String username = getLoggedInUsername(model);
+		film.setUsername(username);
+		filmRepository.save(film);
 		return "films/titanic";
 	}
 

@@ -16,9 +16,7 @@
 
         
         <c:forEach items="${films}" var="film">
-          <c:if test = "${(film.filmname ==  'Titanic')}">
-        <center><p1>Your Rating - <c:out value = "${film.rating}"/>/5</p1>
-        </c:if>                
+          <center><p1>Your Rating - <c:out value = "${film.rating}"/>/5</p1>                  
 		</c:forEach>
 		</center></center><br>
         <center><button><a href="rate" style="text-decoration:none">Rate</a></button></center>

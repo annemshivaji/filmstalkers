@@ -16,10 +16,11 @@ public class Film {
 		
 	}
 	
-
+	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
-	@Id
+	//@Id
 	private String filmname;
 //	private String description;
 //	private LocalDate targetDate;
