@@ -66,7 +66,7 @@ public class FilmControllerJpa {
 //				todo.getTargetDate(), todo.isDone());
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);	
-		return "films/titanic";
+		return "/listfilms";
 	}
 	
 	@RequestMapping("titanic")
@@ -76,6 +76,33 @@ public class FilmControllerJpa {
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);
     	return "films/titanic";
+    }
+	
+	@RequestMapping("godfather")
+	
+    public String godfather(ModelMap model){
+		String username = getLoggedInUsername(model);
+		List<Film> films = filmRepository.findByUsername(username);
+		model.addAttribute("films", films);
+    	return "films/godfather";
+    }
+	
+	@RequestMapping("fightclub")
+	
+    public String fightclub(ModelMap model){
+		String username = getLoggedInUsername(model);
+		List<Film> films = filmRepository.findByUsername(username);
+		model.addAttribute("films", films);
+    	return "films/fightclub";
+    }
+	
+	@RequestMapping("basketball")
+	
+    public String basketball(ModelMap model){
+		String username = getLoggedInUsername(model);
+		List<Film> films = filmRepository.findByUsername(username);
+		model.addAttribute("films", films);
+    	return "films/basketball";
     }
 	
 	private String getLoggedInUsername(ModelMap model) {

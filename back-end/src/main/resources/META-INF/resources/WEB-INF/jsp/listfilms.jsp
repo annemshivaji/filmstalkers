@@ -23,28 +23,13 @@
     
        <div class="container1"><a href="titanic" style="text-decoration:none;"><img src="pics/titanic.jpg"></img></a>
                  <p1>Titanic</p1></div>
-       <div class="container1"><img src="pics/god father 2.jpg"></img>
+       <div class="container1"><a href="godfather" style="text-decoration:none;"><img src="pics/god father 2.jpg"></img></a>
                  <p1>The Godfather II</p1></div>
-       <div class="container1" "><img src="pics/fight club.jpg"></img>
+       <div class="container1" "><a href="fightclub" style="text-decoration:none;"><img src="pics/fight club.jpg"></img></a>
                  <p1>fight club</p1></div>
-       <div class="container1"><img src="pics/basket.jpg"></img>
+       <div class="container1"><a href="basketball" style="text-decoration:none;"><img src="pics/basket.jpg"></img></a>
                  <p1>Basketball..</p1></div>
-       <div class="container1"><img src="pics/taxi.jpg"></img>
-                 <p1>Taxi Driver</p1></div>
-       <div class="container1"><img src="pics/requiem.jpg"></img>
-                 <p1>Requiem..</p1></div>
-       <div class="container1"><img src="pics/joker1.jpg"></img>
-                 <p1>Joker</p1></div>
-       <div class="container1"><img src="pics/ok.jpg"></img>
-                 <p1>The Shawshank..</p1></div>
-        <div class="container1"><a href="films/titanic.html" style="text-decoration:none;"><img src="pics/titanic.jpg"></img><br>
-                    <p1>Titanic</p1></a></div>
-        <div class="container1"><img src="pics/god father 2.jpg"></img>
-                    <p1>The Godfather II</p1></div>
-        <div class="container1" "><img src="pics/fight club.jpg"></img>
-                    <p1>fight club</p1></div>
-        <div class="container1"><img src="pics/basket.jpg"></img>
-                    <p1>Basketball..</p1></div>
+
     
     </div></center>
     </div>
