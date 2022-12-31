@@ -26,8 +26,9 @@
         
         
   <br> 
- <hr>
+ 
  <div class="w3-container">     
+ <hr>
   <p2>COMMENTS</p2><br>       
   <div class="w3-card-4" style="width:100%">
   <c:forEach items="${filmss}" var="film">
@@ -53,5 +54,5 @@
         
         
         
-        </div> 
+         
 <%@ include file="common/footer.jspf" %>

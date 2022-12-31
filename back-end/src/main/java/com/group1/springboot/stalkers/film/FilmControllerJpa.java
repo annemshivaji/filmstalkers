@@ -76,8 +76,8 @@ public class FilmControllerJpa {
     public String titanic(ModelMap model){
 		String username = getLoggedInUsername(model);
 		List<Film> films = filmRepository.findByUsername(username);
-		List<Film> filmss = filmRepository.findAll();
 		model.addAttribute("films", films);
+		List<Film> filmss = filmRepository.findAll();		
 		model.addAttribute("filmss", filmss);
     	return "films/titanic";
     }
@@ -88,6 +88,8 @@ public class FilmControllerJpa {
 		String username = getLoggedInUsername(model);
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);
+		List<Film> filmss = filmRepository.findAll();		
+		model.addAttribute("filmss", filmss);
     	return "films/godfather";
     }
 	
@@ -97,6 +99,8 @@ public class FilmControllerJpa {
 		String username = getLoggedInUsername(model);
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);
+		List<Film> filmss = filmRepository.findAll();		
+		model.addAttribute("filmss", filmss);
     	return "films/fightclub";
     }
 	
@@ -106,6 +110,8 @@ public class FilmControllerJpa {
 		String username = getLoggedInUsername(model);
 		List<Film> films = filmRepository.findByUsername(username);
 		model.addAttribute("films", films);
+		List<Film> filmss = filmRepository.findAll();		
+		model.addAttribute("filmss", filmss);
     	return "films/basketball";
     }
 	

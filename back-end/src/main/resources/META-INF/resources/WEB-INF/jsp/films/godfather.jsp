@@ -23,5 +23,27 @@
 		</center></center><br>
         <center><button class="button2"><a href="rate" style="text-decoration:none">Rate</a></button></center>
         <br>
+        
+          <br> 
+
+ <div class="w3-container">  
+  <hr>   
+  <p2>COMMENTS</p2><br></div>
+    <div class="w3-container">    
+  <div class="w3-card-4" style="width:100%">
+  <c:forEach items="${filmss}" var="film">
+    <c:if test = "${(film.filmname ==  'the god father') && (film.comment!=null)}">           
+      <br>
+      <p3>${film.username}</p3><br>
+      <hr>
+    <header class="w3-container w3-light-grey">
+    
+      <h5>${film.comment}</h5>
+    </header>
+     </c:if>  
+    </c:forEach>
+     
+</div>
+<br><br>
         </div> 
 <%@ include file="common/footer.jspf" %>
