@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 public class FilmService {
 		private static List<Film> films = new ArrayList<>();
 		static {
-			films.add(new Film(1,"shivaji","Titanic",5d));
-			films.add(new Film(2,"shivaji","Fightclub",4.5d));
-			films.add(new Film(3,"sujatha","GodFather-II",5d));}
+			films.add(new Film(1,"shivaji","Titanic",5d,"ok"));
+			films.add(new Film(2,"shivaji","Fightclub",4.5d,"ok"));
+			films.add(new Film(3,"sujatha","GodFather-II",5d,"ok"));}
 		
 
 		

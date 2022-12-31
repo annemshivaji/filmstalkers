@@ -25,8 +25,9 @@ public class Film {
 //	private String description;
 //	private LocalDate targetDate;
 	private double rating;
+	private String comment;
 	
-	public Film(int id,String username,String filmname,double rating) {
+	public Film(int id,String username,String filmname,double rating,String comment) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -34,6 +35,7 @@ public class Film {
 //		this.description = description;
 //		this.targetDate = targetDate;
 		this.rating = rating;
+		this.comment = comment;
 	}
 
     
@@ -60,22 +62,15 @@ public class Film {
 	public void setFilmname(String filmname) {
 		this.filmname = filmname;
 	}
+	
+	public String getcomment() {
+		return comment;
+	}
 
-//	public String getDescription() {
-//		return description;
-//	}
-//
-//	public void setDescription(String description) {
-//		this.description = description;
-//	}
-//
-//	public LocalDate getTargetDate() {
-//		return targetDate;
-//	}
-//
-//	public void setTargetDate(LocalDate targetDate) {
-//	this.targetDate = targetDate;
-//}
+	public void setcomment(String comment) {
+		this.comment = comment;
+	}
+
 	
 	public double getrating() {
 		return rating;

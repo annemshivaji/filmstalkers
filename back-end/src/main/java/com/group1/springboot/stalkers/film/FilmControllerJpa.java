@@ -42,7 +42,7 @@ public class FilmControllerJpa {
 	@RequestMapping(value="rate",method=RequestMethod.GET)
 	public String getrate(ModelMap model) {
 		String username = getLoggedInUsername(model);
-		Film film = new Film(0, username, "",5);
+		Film film = new Film(0, username, "",5,"");
 		model.put("film", film);
 		return "rate";
 	}
@@ -65,7 +65,9 @@ public class FilmControllerJpa {
 //		todoService.addTodo(username, todo.getDescription(), 
 //				todo.getTargetDate(), todo.isDone());
 		List<Film> films = filmRepository.findByUsername(username);
+		
 		model.addAttribute("films", films);	
+		
 		return "/listfilms";
 	}
 	
@@ -74,7 +76,9 @@ public class FilmControllerJpa {
     public String titanic(ModelMap model){
 		String username = getLoggedInUsername(model);
 		List<Film> films = filmRepository.findByUsername(username);
+		List<Film> filmss = filmRepository.findAll();
 		model.addAttribute("films", films);
+		model.addAttribute("filmss", filmss);
     	return "films/titanic";
     }
 	

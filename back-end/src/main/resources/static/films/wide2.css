@@ -32,6 +32,14 @@ p1{
    font-family:'Post No Bills Jaffna ExtraBold'
 }
 
+
+ p3{ 
+   font-weight:bold;
+   font-size:20px;
+   text-decoration:none;
+   color: #aba5a5;
+   font-family:'barlow';
+}
 body{
     background-image:url("pics/dp1.jpg");
     font-family:'barlow';
@@ -57,6 +65,7 @@ a:visited {
 
 
 .button2 {
+	width: 145px;
   background-color:#555555; 
   border-radius:10px;
   border: none;

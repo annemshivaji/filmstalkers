@@ -10,7 +10,9 @@
 			 <p1>Filmname ( Enter the film name in small letters for verification ) : </p1><br><br>
 			 <form:input type="text" path="filmname" required="required"/>
 			 <form:input type="hidden" path="id" />
-			 <form:input type="hidden" path="username" />
+			 <form:input type="hidden" path="username" /><br><br>
+			 <p1>Comment (not necessary) : </p1><br><br>
+			 <form:input type="text" path="comment" />
 			<br><br>
 			<a><input class="button2" type="submit"/></a>
 		</form:form>
