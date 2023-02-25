@@ -19,7 +19,7 @@ password : 9
 # Select the movie to rate
 <img width="959" alt="image" src="https://user-images.githubusercontent.com/84372271/221370902-d6fe2ba2-be51-4242-858b-e19cc5fc2daf.png">
 
-# You can view the trailer , the description of the movie, and you can rate the movie, can check your previous ratings. 
+# You can view the trailer , the description of the movie, can rate the movie, also can check your previous ratings. 
 <img width="959" alt="image" src="https://user-images.githubusercontent.com/84372271/221370940-5113e21c-d479-4da3-bdf5-8e7377c4f3e7.png">
 
 <img width="413" alt="image" src="https://user-images.githubusercontent.com/84372271/221370966-dd1b2faf-3788-40e8-939f-61c54419c909.png">
