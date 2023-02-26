@@ -2,7 +2,7 @@
 A Spring Boot Web Application where we can rate films , see our previous ratings and present our opinions in the form of comments
 
 # how to run
-1.Download the code, import as existing maven project via eclipse ide.
+1.Download the code, import as existing maven project via eclipse ide./n
 2.Right click on the project, select run as, maven build.
 3.In goals, enter "spring-boot:run". Go to http://localhost:8080/ to see the login page.
 
