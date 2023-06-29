@@ -1,5 +1,5 @@
 # filmstalkers
-A Spring Boot Web Application where we can rate films , see our previous ratings and present our opinions in the form of comments
+A small Spring Boot Web Application where we can rate films , see our previous ratings and present our opinions in the form of comments
 
 # how to run
 Download the code, import as existing maven project via eclipse ide. Right click on the project, select run as, maven build. In goals, enter "spring-boot:run". Go to http://localhost:8080/ to see the login page.
